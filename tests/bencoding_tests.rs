@@ -1,5 +1,5 @@
 use serde_json::json;
-use Torrent::bencodings::decode; // Import your function from the main code
+use Torrent::bencodings::decode;
 
 #[test]
 fn test_decode() {
@@ -11,7 +11,5 @@ fn test_decode() {
     });
 
     let result = decode(input.to_string());
-
-    // Check if the result matches the expected JSON object
     assert_eq!(result, expected);
 }
